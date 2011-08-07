@@ -1,7 +1,12 @@
-SOURCES = main.cpp
+HEADERS   = mainwindow.h
+
+SOURCES = main.cpp \
+		  mainwindow.cpp
+
+
 
 target.path 		= qnote
-sources.files 		= $$SOURCES $$HEADS $$RESOURCES $$FORMS qnote.pro README
+sources.files 		= $$SOURCES $$HEADERS $$RESOURCES $$FORMS qnote.pro README
 sources.path 		= qnote
 
 INSTALLS += target sources
